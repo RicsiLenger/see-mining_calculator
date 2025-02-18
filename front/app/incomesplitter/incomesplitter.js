@@ -60,7 +60,7 @@ const IncomeSplitter = () => {
         onChange={(e) => setAmount(parseFloat(e.target.value) || 0)}
       />
       <button
-        className="bg-blue-500 text-black p-2 mt-2 w-full rounded"
+        className="bg-blue-500 text-black p-2 mt-2 w-full rounded hover:bg-blue-600"
         onClick={addPerson}
       >
         + Személy hozzáadása
@@ -82,7 +82,7 @@ const IncomeSplitter = () => {
             onChange={(e) => updatePerson(index, "minutes", e.target.value)}
           />
           <button
-            className="bg-red-500 text-black p-2 rounded-sm"
+            className="bg-red-500 text-black p-2 rounded-sm hover:bg-red-800"
             onClick={() => removePerson(index)}
           >
             <MdDelete className="size-6"/>
@@ -90,7 +90,7 @@ const IncomeSplitter = () => {
         </div>
       ))}
       <button
-        className="bg-green-500 text-black p-2 mt-2 w-full rounded"
+        className="bg-green-500 text-black p-2 mt-2 w-full rounded hover:bg-green-600"
         onClick={calculateResults}
       >
         Számolás
@@ -105,7 +105,7 @@ const IncomeSplitter = () => {
         </p>
       ))}
         <button
-          className="bg-purple-500 text-black p-2 mt-4 w-full rounded"
+          className="bg-purple-500 text-black p-2 mt-4 w-full rounded hover:bg-purple-600"
           onClick={downloadInvoice}
         >
           Számla letöltése
